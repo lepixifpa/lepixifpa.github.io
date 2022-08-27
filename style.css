@@ -1,0 +1,44 @@
+* {
+    font-family: Poppins;
+}
+
+
+body {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.logo-btn {
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    font-size: 32px;
+    margin: 6px;
+    border-radius: 10px;
+}
+
+.logo-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 250ms;
+}
+
+#descricao {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
