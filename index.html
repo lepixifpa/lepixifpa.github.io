@@ -20,6 +20,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
@@ -37,20 +38,23 @@
         <main>
             <div id="redes">
                 <a href="https://github.com/lepixifpa">
-                    <button class="rede-btn">
-                        <i class="fa-brands fa-github"></i> Github</button
-                    ><br />
+                    <button class="rede-btn" type="button">
+                        <i class="fa-brands fa-github"></i> Github
+                    </button>
                 </a>
                 <a href="https://www.instagram.com/lepix.ifpa/">
-                    <button class="rede-btn">
+                    <button class="rede-btn" type="button">
                         <i class="fa-brands fa-instagram"></i> Instagram</button
                     ><br />
                 </a>
                 <a href="mailto: ifpalepix@gmail.com">
-                    <button class="rede-btn">
+                    <button class="rede-btn" type="button">
                         <i class="fa-solid fa-envelope"></i> Email
                     </button>
                 </a>
+                <button class="rede-btn" compartilhar-btn type="button">
+                    <i class="fa-solid fa-share"></i> Compartilhar
+                </button>
             </div>
 
             <div id="participantes">
@@ -122,5 +126,23 @@
                 </div>
             </div>
         </main>
+        <div id="compartilhar-bg" compartilhar-bg>
+            <div id="compartilhar-container">
+                <button type="button">
+                    <i class="fa-solid fa-xmark" fechar-btn></i>
+                </button>
+
+                <h3>Link</h3>
+                https://lepixifpa.github.io/<br />
+                <button type="button" copiar-url>Copiar</button>
+
+                <h3>QR Code</h3>
+                <img
+                    src="https://raw.githubusercontent.com/lepixifpa/lepixifpa.github.io/main/qrcode.png"
+                    alt="QR Code"
+                    width="50%"
+                /><br />
+            </div>
+        </div>
     </body>
 </html>

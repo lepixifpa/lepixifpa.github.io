@@ -26,17 +26,21 @@ body {
 }
 
 .rede-btn {
+    margin: 8px auto auto auto;
+    width: 270px;
+    max-width: 45%;
+    font-size: 32px;
+}
+
+button {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
-    font-size: 32px;
-    margin: 8px auto auto auto;
     border-radius: 10px;
-    width: 220px;
     transition: 250ms;
     cursor: pointer;
 }
 
-.rede-btn:hover {
+button:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
@@ -75,4 +79,42 @@ body {
 #participantes a {
     color: black;
     text-decoration: none;
+}
+
+#compartilhar-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#compartilhar-container {
+    background: #11998e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #38ef7d,
+        #11998e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+#compartilhar-container button {
+    font-size: 18px;
 }
