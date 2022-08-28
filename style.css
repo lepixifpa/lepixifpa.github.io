@@ -19,16 +19,27 @@ body {
 
     text-align: center;
     color: white;
+    width: 100vw;
+    height: 100vh;
 }
 
 #redes {
     margin: 12px auto 12px auto;
+    width: 100vw;
+    word-wrap: break-word;
+}
+
+#redes a {
+    display: inline-block;
+}
+
+#redes button {
+    width: 270px;
+    max-width: 80vw;
 }
 
 .rede-btn {
     margin: 8px auto auto auto;
-    width: 270px;
-    max-width: 45%;
     font-size: 32px;
 }
 
