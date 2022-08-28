@@ -1,8 +1,10 @@
+// Variables
 const compartilharBtn = document.querySelector("[compartilhar-btn]");
 const compartilharBg = document.querySelector("[compartilhar-bg]");
 const copiarBtn = document.querySelector("[copiar-url]");
 const fecharBtn = document.querySelector("[fechar-btn]");
 
+// Event listeners
 compartilharBtn.addEventListener("click", alternarVisibilidadeCompartilhar);
 compartilharBg.addEventListener("click", (e) => {
     if (
@@ -14,9 +16,14 @@ compartilharBg.addEventListener("click", (e) => {
 });
 copiarBtn.addEventListener("click", () => {
     navigator.clipboard.writeText("https://lepixifpa.github.io/")
+    copiarBtn instanceof HTMLElement ? copiarBtn.innerText = "Copiado!" : ""
+    setTimeout(() => {
+        copiarBtn instanceof HTMLElement ? copiarBtn.innerText = "Copiar" : ""
+    }, 2000)
 })
 fecharBtn.addEventListener("click", alternarVisibilidadeCompartilhar)
 
+// Functions
 function alternarVisibilidadeCompartilhar() {
     const statusBg = window.getComputedStyle(compartilharBg).display;
     switch (statusBg) {
@@ -28,5 +35,3 @@ function alternarVisibilidadeCompartilhar() {
             break;
     }
 }
-
-function copiarUrl() {}
