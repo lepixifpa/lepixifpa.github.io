@@ -15,13 +15,15 @@ compartilharBg.addEventListener("click", (e) => {
     }
 });
 copiarBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText("https://lepixifpa.github.io/")
-    copiarBtn instanceof HTMLElement ? copiarBtn.innerText = "Copiado!" : ""
+    navigator.clipboard.writeText("https://lepixifpa.github.io/");
+    copiarBtn instanceof HTMLElement ? (copiarBtn.innerText = "Copiado!") : "";
     setTimeout(() => {
-        copiarBtn instanceof HTMLElement ? copiarBtn.innerText = "Copiar" : ""
-    }, 2000)
-})
-fecharBtn.addEventListener("click", alternarVisibilidadeCompartilhar)
+        copiarBtn instanceof HTMLElement
+            ? (copiarBtn.innerText = "Copiar")
+            : "";
+    }, 2000);
+});
+fecharBtn.addEventListener("click", alternarVisibilidadeCompartilhar);
 
 // Functions
 function alternarVisibilidadeCompartilhar() {
