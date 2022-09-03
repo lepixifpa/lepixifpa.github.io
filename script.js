@@ -46,12 +46,12 @@ function minecraft() {
     const pointerCursors = [buttons, anchors];
 
     body.style.cursor =
-        "url(http://www.rw-designer.com/cursor-view/24907.png), auto";
+        "url(https://ani.cursors-4u.net/games/images16/gam1537.png), auto";
 
     pointerCursors.forEach((element) => {
         element.forEach((element) => {
             element.style.cursor =
-                "url(http://www.rw-designer.com/cursor-view/24908.png), auto";
+                "url(https://ani.cursors-4u.net/games/images16/gam1535.png), auto";
         });
     });
 }
