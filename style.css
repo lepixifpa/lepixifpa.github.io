@@ -27,17 +27,17 @@ body {
     font-size: 100%;
 }
 
-.redes {
+#redes {
     margin: 12px auto 12px auto;
     width: 100%;
     word-wrap: break-word;
 }
 
-.redes a {
+#redes a {
     display: inline-block;
 }
 
-.redes button {
+#redes button {
     width: 270px;
     max-width: 80vw;
 }
@@ -59,13 +59,13 @@ button:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-.descricao {
+#descricao {
     width: 70%;
     margin: auto;
     font-size: 24px;
 }
 
-.participantes {
+#participantes {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     padding: 12px;
@@ -75,15 +75,15 @@ button:hover {
     margin: auto;
 }
 
-.participantes h2 {
+#participantes h2 {
     margin: 8px;
 }
 
-.participantes img {
+#participantes img {
     border-radius: 50%;
 }
 
-.participantes div {
+#participantes div {
     width: 120px;
     display: inline-block;
     position: relative;
@@ -91,11 +91,11 @@ button:hover {
     transition: 250ms;
 }
 
-.participantes div:hover {
+#participantes div:hover {
     bottom: 20px;
 }
 
-.participantes a {
+#participantes a {
     color: black;
     text-decoration: none;
 }
