@@ -60,10 +60,16 @@ button:hover {
 }
 
 #descricao {
-    width: 70%;
+    width: 80%;
     margin: auto;
     font-size: 24px;
 }
+
+#descricao p {
+    border-top: solid 3px rgba(255, 255, 255, 0.6);
+    border-bottom: solid 3px rgba(255, 255, 255, 0.6);
+}
+
 
 #participantes {
     background-color: rgba(255, 255, 255, 0.6);
@@ -147,10 +153,10 @@ nav {
     margin-bottom: 8px;
     background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
-
 }
 
-nav, nav a {
+nav,
+nav a {
     color: white;
     font-size: 18px;
     transition: 250ms;
