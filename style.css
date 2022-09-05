@@ -151,8 +151,9 @@ nav {
     justify-content: space-around;
     padding: 5px;
     margin-bottom: 8px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     text-align: center;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.6);
 }
 
 nav,
@@ -164,4 +165,10 @@ nav a {
 
 nav a:hover {
     color: #11998e;
+}
+
+footer {
+    margin: 8px;
+    font-size: 18px;
+    font-style: italic;
 }
