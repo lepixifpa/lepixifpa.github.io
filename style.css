@@ -57,6 +57,7 @@ button:hover {
 #descricao {
     width: 70%;
     margin: auto;
+    font-size: 24px;
 }
 
 #participantes {
