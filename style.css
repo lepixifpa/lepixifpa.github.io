@@ -59,9 +59,28 @@ button:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-#descricao {
-    width: 80%;
+#container-descricao {
+    display: flex;
     margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+#logo {
+    width: 50%;
+}
+
+#logo img {
+    width: 240px;
+    max-width: 50%;
+}
+
+#descricao {
+    width: 50%;
     font-size: 24px;
 }
 
@@ -69,7 +88,6 @@ button:hover {
     border-top: solid 3px rgba(255, 255, 255, 0.6);
     border-bottom: solid 3px rgba(255, 255, 255, 0.6);
 }
-
 
 #participantes {
     background-color: rgba(255, 255, 255, 0.6);
