@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -22,19 +24,20 @@ body {
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    font-size: 100%;
 }
 
-#redes {
+.redes {
     margin: 12px auto 12px auto;
     width: 100%;
     word-wrap: break-word;
 }
 
-#redes a {
+.redes a {
     display: inline-block;
 }
 
-#redes button {
+.redes button {
     width: 270px;
     max-width: 80vw;
 }
@@ -56,29 +59,31 @@ button:hover {
     background-color: rgba(255, 255, 255, 1);
 }
 
-#descricao {
+.descricao {
     width: 70%;
     margin: auto;
     font-size: 24px;
 }
 
-#participantes {
+.participantes {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     padding: 12px;
     border-radius: 10px;
-    font-size: 20px
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
 }
 
-#participantes h2 {
+.participantes h2 {
     margin: 8px;
 }
 
-#participantes img {
+.participantes img {
     border-radius: 50%;
 }
 
-#participantes div {
+.participantes div {
     width: 120px;
     display: inline-block;
     position: relative;
@@ -86,11 +91,11 @@ button:hover {
     transition: 250ms;
 }
 
-#participantes div:hover {
+.participantes div:hover {
     bottom: 20px;
 }
 
-#participantes a {
+.participantes a {
     color: black;
     text-decoration: none;
 }
@@ -131,4 +136,26 @@ button:hover {
 
 #compartilhar-container button {
     font-size: 18px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+nav, nav a {
+    color: white;
+    font-size: 18px;
+    transition: 250ms;
+}
+
+nav a:hover {
+    color: #11998e;
 }
