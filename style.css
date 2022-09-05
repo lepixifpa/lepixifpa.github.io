@@ -18,13 +18,15 @@ body {
 
     text-align: center;
     color: white;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #redes {
     margin: 12px auto 12px auto;
-    width: 100vw;
+    width: 100%;
     word-wrap: break-word;
 }
 
