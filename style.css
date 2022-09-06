@@ -29,30 +29,32 @@ body {
 #redes {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 12px;
     margin-bottom: 12px;
     width: 90%;
 }
 
-#redes div {
-    margin: auto;
+@media screen and (max-width: 650px) {
+    #redes {
+        flex-direction: column !important;
+    }
+}
+
+#redes div {    
+    width: 280px;
+    align-self: center;
     margin-left: 8px;
     margin-top: 8px;
     text-align: center;
 }
 
 #redes button {
-    margin: auto;
     text-align: center;
     align-self: center;
-    width: 260px;
+    width: 100%;
     padding: 4px;
     font-size: 24px;
 }
