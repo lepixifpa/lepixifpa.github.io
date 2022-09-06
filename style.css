@@ -29,7 +29,7 @@ body {
 
 #redes {
     margin: 12px auto 12px auto;
-    width: 100%;
+    width: 90%;
     word-wrap: break-word;
 }
 
@@ -38,8 +38,8 @@ body {
 }
 
 #redes button {
-    width: 270px;
-    max-width: 80vw;
+    width: 300px;
+    max-width: 100%;
 }
 
 .rede-btn {
@@ -65,13 +65,13 @@ button:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
     flex-wrap: wrap;
     word-break: break-all;
 }
 
 #logo {
-    width: 50%;
+    width: 30%;
 }
 
 #logo img {
@@ -80,7 +80,7 @@ button:hover {
 }
 
 #descricao {
-    width: 50%;
+    width: 70%;
     font-size: 24px;
 }
 
@@ -95,7 +95,7 @@ button:hover {
     padding: 12px;
     border-radius: 10px;
     font-size: 20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -183,6 +183,12 @@ nav a {
 
 nav a:hover {
     color: #11998e;
+    background-image: linear-gradient(45deg, #38ef7d, #11998e);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 footer {
