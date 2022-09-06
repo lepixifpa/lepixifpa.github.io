@@ -28,7 +28,7 @@ body {
 
 #redes {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     word-wrap: break-word;
     text-align: center;
@@ -42,7 +42,6 @@ body {
 }
 
 #redes div {
-    width: 280px;
     margin: auto;
     margin-left: 8px;
     margin-top: 8px;
@@ -52,7 +51,8 @@ body {
 #redes button {
     margin: auto;
     text-align: center;
-    width: 100%;
+    align-self: center;
+    width: 260px;
     padding: 4px;
     font-size: 24px;
 }
@@ -98,15 +98,15 @@ button:hover {
     border-top: solid 3px rgba(255, 255, 255, 0.6);
     border-bottom: solid 3px rgba(255, 255, 255, 0.6);
     padding: 8px;
+    border-radius: 12px;
 }
 
 #participantes {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     padding: 12px;
-    border-radius: 10px;
     font-size: 20px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -205,7 +205,15 @@ nav a:hover {
 }
 
 footer {
+    color: white;
     margin: 8px;
     font-size: 18px;
     font-style: italic;
+}
+
+nav,
+button,
+#participantes,
+#participantes img, #descricao p {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
