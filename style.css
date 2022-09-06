@@ -17,7 +17,6 @@ body {
         #38ef7d,
         #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     text-align: center;
     color: white;
     width: auto;
@@ -28,23 +27,34 @@ body {
 }
 
 #redes {
-    margin: 12px auto 12px auto;
-    width: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     word-wrap: break-word;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 90%;
 }
 
-#redes a {
-    display: inline-block;
+#redes div {
+    width: 280px;
+    margin: auto;
+    margin-left: 8px;
+    margin-top: 8px;
+    text-align: center;
 }
 
 #redes button {
-    width: 300px;
-    max-width: 100%;
-}
-
-.rede-btn {
-    margin: 8px auto auto auto;
-    font-size: 32px;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    font-size: 24px;
 }
 
 button {
