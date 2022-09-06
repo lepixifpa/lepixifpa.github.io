@@ -87,6 +87,7 @@ button:hover {
 #descricao p {
     border-top: solid 3px rgba(255, 255, 255, 0.6);
     border-bottom: solid 3px rgba(255, 255, 255, 0.6);
+    padding: 8px;
 }
 
 #participantes {
