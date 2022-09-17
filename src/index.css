@@ -43,7 +43,7 @@ body {
     }
 }
 
-#redes div {    
+#redes div {
     width: 280px;
     align-self: center;
     margin-left: 8px;
@@ -55,12 +55,12 @@ body {
     text-align: center;
     align-self: center;
     width: 100%;
-    padding: 4px;
     font-size: 24px;
 }
 
 button {
     background-color: rgba(255, 255, 255, 0.3);
+    padding: 4px;
     border: none;
     border-radius: 10px;
     transition: 250ms;
@@ -123,6 +123,7 @@ button:hover {
 
 #participantes div {
     width: 120px;
+    margin-right: 8px;
     display: inline-block;
     position: relative;
     bottom: 0;
@@ -139,7 +140,6 @@ button:hover {
 }
 
 #compartilhar-bg {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
