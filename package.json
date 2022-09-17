@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "deploy":"npm run build && git add dist -f && git commit -m'hosting'  && git subtree push --prefix dist origin gh-pages",
+    "deploy":"npm run build && git add dist -f && git commit -m 'hosting' && git subtree push --prefix dist origin gh-pages",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
