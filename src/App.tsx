@@ -12,73 +12,69 @@ export const App = () => {
     const fecharBtn = document.querySelector("#fechar-btn");
 
     // Event listeners
-    React.useEffect(() => {
-        compartilharBtn?.addEventListener("click", () => {
+
+    compartilharBtn?.addEventListener("click", () => {
+        alternarVisibilidadeCompartilhar();
+        console.log("Botão compartilhar clicado");
+    });
+    compartilharBg?.addEventListener("click", (e) => {
+        if (
+            (e.target instanceof HTMLElement
+                ? e.target.getAttribute("id")
+                : "") === "compartilhar-bg"
+        ) {
             alternarVisibilidadeCompartilhar();
-            console.log("Botão compartilhar clicado");
-        });
-        compartilharBg?.addEventListener("click", (e) => {
-            if (
-                (e.target instanceof HTMLElement
-                    ? e.target.getAttribute("id")
-                    : "") === "compartilhar-bg"
-            ) {
-                alternarVisibilidadeCompartilhar();
-                console.log("Background compartilhar clicado");
-            }
-        });
-        copiarBtn?.addEventListener("click", () => {
-            navigator.clipboard.writeText("https://lepixifpa.github.io/");
+            console.log("Background compartilhar clicado");
+        }
+    });
+    copiarBtn?.addEventListener("click", () => {
+        navigator.clipboard.writeText("https://lepixifpa.github.io/");
+        copiarBtn instanceof HTMLElement
+            ? (copiarBtn.innerText = "Copiado!")
+            : console.error();
+        setTimeout(() => {
             copiarBtn instanceof HTMLElement
-                ? (copiarBtn.innerText = "Copiado!")
-                : "";
-            setTimeout(() => {
-                copiarBtn instanceof HTMLElement
-                    ? (copiarBtn.innerText = "Copiar")
-                    : "";
-            }, 2000);
-            console.log("Botão copiar clicado");
-        });
-        fecharBtn?.addEventListener("click", () => {
+                ? (copiarBtn.innerText = "Copiar")
+                : console.error();
+        }, 2000);
+        console.log("Botão copiar clicado");
+    });
+    fecharBtn?.addEventListener("click", () => {
+        alternarVisibilidadeCompartilhar();
+        console.log("Botão fechar clicado");
+    });
+
+    compartilharBtn?.removeEventListener("click", () => {
+        alternarVisibilidadeCompartilhar();
+        console.log("Botão compartilhar clicado");
+    });
+    compartilharBg?.removeEventListener("click", (e) => {
+        if (
+            (e.target instanceof HTMLElement
+                ? e.target.getAttribute("id")
+                : "") === "compartilhar-bg"
+        ) {
             alternarVisibilidadeCompartilhar();
-            console.log("Botão fechar clicado");
-        });
-
-        // Remove os event listeners para evitar serem ativados duplamente
-        return () => {
-            compartilharBtn?.removeEventListener("click", () => {
-                alternarVisibilidadeCompartilhar();
-                console.log("Botão compartilhar clicado");
-            });
-            compartilharBg?.removeEventListener("click", (e) => {
-                if (
-                    (e.target instanceof HTMLElement
-                        ? e.target.getAttribute("id")
-                        : "") === "compartilhar-bg"
-                ) {
-                    alternarVisibilidadeCompartilhar();
-                    console.log("Background compartilhar clicado");
-                }
-            });
-            copiarBtn?.removeEventListener("click", () => {
-                navigator.clipboard.writeText("https://lepixifpa.github.io/");
-                copiarBtn instanceof HTMLElement
-                    ? (copiarBtn.innerText = "Copiado!")
-                    : "";
-                setTimeout(() => {
-                    copiarBtn instanceof HTMLElement
-                        ? (copiarBtn.innerText = "Copiar")
-                        : "";
-                }, 2000);
-                console.log("Botão copiar clicado");
-            });
-            fecharBtn?.removeEventListener("click", () => {
-                alternarVisibilidadeCompartilhar();
-                console.log("Botão fechar clicado");
-            });
-        };
-    }, []);
-
+            console.log("Background compartilhar clicado");
+        }
+    });
+    copiarBtn?.removeEventListener("click", () => {
+        navigator.clipboard.writeText("https://lepixifpa.github.io/");
+        copiarBtn instanceof HTMLElement
+            ? (copiarBtn.innerText = "Copiado!")
+            : console.error();
+        setTimeout(() => {
+            copiarBtn instanceof HTMLElement
+                ? (copiarBtn.innerText = "Copiar")
+                : console.error();
+        }, 2000);
+        console.log("Botão copiar clicado");
+    });
+    fecharBtn?.removeEventListener("click", () => {
+        alternarVisibilidadeCompartilhar();
+        console.log("Botão fechar clicado");
+    });
+    
     // Functions
     function alternarVisibilidadeCompartilhar() {
         const statusBg =
@@ -90,12 +86,12 @@ export const App = () => {
             case "none":
                 compartilharBg instanceof HTMLElement
                     ? (compartilharBg.style.display = "block")
-                    : "";
+                    : console.error();
                 break;
             case "block":
                 compartilharBg instanceof HTMLElement
                     ? (compartilharBg.style.display = "none")
-                    : "";
+                    : console.error();
                 break;
         }
     }

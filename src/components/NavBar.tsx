@@ -6,9 +6,9 @@ export const NavBar = () => {
                 alt=""
                 width="40px"
             />
-            <a href="#">Home</a>
+            <a href="body">Home</a>
             <a href="#participantes">Participantes</a>
             <a href="#redes">Redes sociais</a>
         </nav>
     );
-};
+};  

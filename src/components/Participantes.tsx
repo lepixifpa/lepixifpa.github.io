@@ -3,7 +3,11 @@ export const Participantes = () => {
         <div id="participantes">
             <h2>Participantes</h2>
             <div>
-                <a href="https://github.com/vitorkoch" target="_blank">
+                <a
+                    href="https://github.com/vitorkoch"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/105176076?v=4"
                         width="120px"
@@ -19,7 +23,11 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="https://github.com/Sukira-Mandela" target="_blank">
+                <a
+                    href="https://github.com/Sukira-Mandela"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/95509194?v=4"
                         width="120px"
@@ -35,7 +43,11 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="https://github.com/MaamMark" target="_blank">
+                <a
+                    href="https://github.com/MaamMark"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/96156555?v=4"
                         width="120px"
@@ -51,7 +63,11 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="https://github.com/RebecaRDonato" target="_blank">
+                <a
+                    href="https://github.com/RebecaRDonato"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/85712784?v=4"
                         width="120px"
@@ -67,7 +83,11 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="https://github.com/Abytsu" target="_blank">
+                <a
+                    href="https://github.com/Abytsu"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/42917989?v=4"
                         width="120px"
@@ -83,7 +103,11 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="https://github.com/Satur696" target="_blank">
+                <a
+                    href="https://github.com/Satur696"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <img
                         src="https://avatars.githubusercontent.com/u/82034427?v=4"
                         width="120px"
@@ -99,7 +123,7 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="" target="_blank">
+                <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
                     <img
                         src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                         alt=""
@@ -116,7 +140,7 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="" target="_blank">
+                <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
                     <img
                         src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                         alt=""
@@ -134,7 +158,7 @@ export const Participantes = () => {
 
             <h2>Coordenadores</h2>
             <div>
-                <a href="" target="_blank">
+                <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
                     <img
                         src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                         width="120px"
@@ -151,7 +175,7 @@ export const Participantes = () => {
             </div>
 
             <div>
-                <a href="" target="_blank">
+                <a href="%PUBLIC_URL%" target="_blank">
                     <img
                         src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                         id="foto-ailton"
