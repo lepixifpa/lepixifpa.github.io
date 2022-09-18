@@ -27,13 +27,12 @@ body {
 }
 
 #redes {
+    margin: 12px auto 12px auto;
     display: flex;
     flex-direction: row;
-    margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    align-items: center;
     width: 90%;
 }
 
@@ -194,6 +193,16 @@ nav a {
     color: white;
     font-size: 18px;
     transition: 250ms;
+}
+
+nav a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav a img {
+    margin-right: 10px;
 }
 
 nav img {
