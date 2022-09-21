@@ -31,7 +31,7 @@ export const Redes = () => {
         </a>
       </div>
 
-      <div>
+      <div className="hide">
         <button id="compartilhar-btn" type="button">
           <i className="fa-solid fa-share"></i>
           <br />
