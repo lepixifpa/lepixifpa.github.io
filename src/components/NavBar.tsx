@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return (
-    <nav> 
+    <nav>
       <a href="body">
         <img
           src="https://raw.githubusercontent.com/lepixifpa/lepixifpa/main/logo-round.png"
