@@ -30,6 +30,7 @@ export const ConfigMenu = () => {
         <img
           src="https://raw.githubusercontent.com/lepixifpa/lepixifpa.github.io/main/qrcode.png"
           alt="QR Code"
+          id="qr-code"
           width="50%"
         />
         <br />
