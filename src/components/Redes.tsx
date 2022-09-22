@@ -1,3 +1,5 @@
+import { alternarVisibilidadeCompartilhar } from "../App";
+
 export const Redes = () => {
   return (
     <div id="redes">
@@ -31,8 +33,8 @@ export const Redes = () => {
         </a>
       </div>
 
-      <div className="hide">
-        <button id="compartilhar-btn" type="button">
+      <div className="">
+        <button id="compartilhar-btn" type="button" onClick={alternarVisibilidadeCompartilhar}>
           <i className="fa-solid fa-share"></i>
           <br />
           Compartilhar
