@@ -1,3 +1,8 @@
+import fotoAilton from "../assets/ailton.jpg"
+import fotoGilberto from "../assets/gilberto.jpg"
+import fotoJosue from "../assets/josue.jpg"
+import fotoKeilane from "../assets/keilane.jpeg"
+
 export const Participantes = () => {
   return (
     <div id="participantes">
@@ -107,7 +112,7 @@ export const Participantes = () => {
       </div>
 
       <div>
-        <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
           <img
             src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
             alt=""
@@ -124,9 +129,9 @@ export const Participantes = () => {
       </div>
 
       <div>
-        <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
           <img
-            src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            src={fotoKeilane}
             alt=""
             id="foto-keilane"
             width="120px"
@@ -140,11 +145,62 @@ export const Participantes = () => {
         </a>
       </div>
 
+      <div>
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
+          <img
+            src="https://pps.whatsapp.net/v/t61.24694-24/299448859_2887710688196799_4512110347379281617_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AVwJgrCGJ-mkWarvfyVgWTOrQfdVc602EJB_ElaSkmq4bw&oe=633D9813"
+            alt=""
+            id="foto-thiago"
+            width="120px"
+            height="120px"
+          />
+          <label htmlFor="foto-thiago">
+            Thiago
+            <br />
+            Soares
+          </label>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
+          <img
+            src="https://pps.whatsapp.net/v/t61.24694-24/301452785_2703960976407035_5732664683102534114_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AVyfbVOPFInlpEF2G4fFs8swpp3mB7JQyFyhOfDjmcIl9A&oe=633D2024"
+            alt=""
+            id="foto-sabrina"
+            width="120px"
+            height="120px"
+          />
+          <label htmlFor="foto-sabrina">
+            Sabrina
+            <br />
+            Silva
+          </label>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
+          <img
+            src={fotoJosue}
+            alt=""
+            id="foto-josue"
+            width="120px"
+            height="120px"
+          />
+          <label htmlFor="foto-josue">
+            Josué
+            <br />
+            Armando
+          </label>
+        </a>
+      </div>
+
       <h2>Coordenadores</h2>
       <div>
-        <a href="%PUBLIC_URL%" target="_blank" rel="noreferrer">
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
           <img
-            src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            src={fotoGilberto}
             width="120px"
             height="120px"
             id="foto-gilberto"
@@ -159,9 +215,9 @@ export const Participantes = () => {
       </div>
 
       <div>
-        <a href="%PUBLIC_URL%" target="_blank">
+        <a href="https://lepixifpa.github.io/" target="_blank" rel="noreferrer">
           <img
-            src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            src={fotoAilton}
             id="foto-ailton"
             width="120px"
             height="120px"
