@@ -4,8 +4,9 @@ import fotoSabrina from "../assets/sabrina.jpg"
 import fotoJosue from "../assets/josue.jpg"
 import fotoKeilane from "../assets/keilane.jpg"
 import fotoGilberto from "../assets/gilberto.jpg"
-import fotoAilton from "../assets/ailton.jpg"
+import fotoAilton from "../assets/ailton.jpeg"
 import fotoThiago from "../assets/thiago.jpg"
+import fotoJamily from "../assets/jamily-recortado.jpeg"
 
 export const Participantes = () => {
   return (
@@ -50,6 +51,7 @@ export const Participantes = () => {
       <Participante
         nome="Jamily"
         sobrenome="Trindade"
+        foto={fotoJamily}
       />
       <Participante nome="Keilane" sobrenome="Alves" foto={fotoKeilane} />
       <Participante
