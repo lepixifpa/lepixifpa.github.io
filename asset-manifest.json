@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.3bfa7782.css",
-    "main.js": "/static/js/main.a28b5883.js",
+    "main.js": "/static/js/main.0aac01a2.js",
     "static/js/787.47256203.chunk.js": "/static/js/787.47256203.chunk.js",
+    "static/media/jamily-recortado.jpeg": "/static/media/jamily-recortado.8e2740910303d76a0a37.jpeg",
+    "static/media/ailton.jpeg": "/static/media/ailton.ef9a9ab022546dade718.jpeg",
     "static/media/vitor.jpg": "/static/media/vitor.a2d18319634950fc49c4.jpg",
     "index.html": "/index.html",
     "main.3bfa7782.css.map": "/static/css/main.3bfa7782.css.map",
-    "main.a28b5883.js.map": "/static/js/main.a28b5883.js.map",
+    "main.0aac01a2.js.map": "/static/js/main.0aac01a2.js.map",
     "787.47256203.chunk.js.map": "/static/js/787.47256203.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bfa7782.css",
-    "static/js/main.a28b5883.js"
+    "static/js/main.0aac01a2.js"
   ]
 }
