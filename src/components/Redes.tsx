@@ -19,12 +19,11 @@ export const Redes = () => {
         icon="fa-solid fa-envelope"
         link="mailto: ifpalepix@gmail.com"
       />
-      <div onClick={alternarVisibilidadeCompartilhar}>
         <Rede
           texto="Compartilhar"
           icon="fa-solid fa-share"
+          click={alternarVisibilidadeCompartilhar}
         />
-      </div>
     </div>
   );
 };

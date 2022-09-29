@@ -1,8 +1,8 @@
-export const Rede = ({link, texto, icon}: any) => {
+export const Rede = ({link, texto, icon, click}: any) => {
   return (
     <div>
       <a href={link}>
-        <button type="button">
+        <button type="button" onClick={click}>
           <i className={icon}></i>
           <br />
           {texto}
