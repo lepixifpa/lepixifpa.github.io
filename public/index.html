@@ -14,12 +14,14 @@
     />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+      @font-face {
+        font-family: Cascadia-Code;
+        src: url("CascadiaCode-Regular.otf") format("otf"),
+          url("CascadiaCode.ttf") format("ttf"),
+          url("CascadiaCode.woff2") format("woff2");
+      }
       * {
-        -webkit-font-feature-settings: "lnum";
-        -moz-font-feature-settings: "lnum";
-        font-feature-settings: "lnum";
-        font-family: Raleway, sans-serif;
-        font-weight: 500;
+        font-family: Cascadia-Code, Raleway, sans-serif;
       }
     </style>
     <link
