@@ -1,3 +1,14 @@
+import Image from "next/image";
+import styled from "styled-components";
+
+const ImageContainer = styled.div`
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid white;
+`;
+
 export const Participante = ({
   nome,
   sobrenome,
@@ -7,7 +18,9 @@ export const Participante = ({
   return (
     <div>
       <a href={link}>
-        <img src={foto} alt="" width="120px" height="120px" />
+        <ImageContainer>
+          <Image src={foto} alt="" layout="fill" objectFit="cover" />
+        </ImageContainer>
         {nome}
         <br />
         {sobrenome}

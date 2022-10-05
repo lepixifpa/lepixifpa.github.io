@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { alternarVisibilidadeCompartilhar } from "../App";
+import { alternarVisibilidadeCompartilhar } from "../pages/index";
 
 export const ConfigMenu = () => {
   const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");

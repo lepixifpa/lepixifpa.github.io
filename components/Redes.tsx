@@ -1,4 +1,4 @@
-import { alternarVisibilidadeCompartilhar } from "../App";
+import { alternarVisibilidadeCompartilhar } from "../pages/index";
 import { Rede } from "./Rede";
 
 export const Redes = () => {
