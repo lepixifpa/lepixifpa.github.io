@@ -11,7 +11,7 @@
 }
 
 body {
-  background: url(../assets/background.jpg) no-repeat center center fixed;
+  background: url(../background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -135,7 +135,7 @@ button:hover {
 }
 
 #compartilhar-container {
-  background: url(../assets/background.jpg) no-repeat center center fixed;
+  background: url(../background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
