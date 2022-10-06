@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { alternarVisibilidadeCompartilhar } from "../pages/index";
+import Image from "next/image"
 
 export const ConfigMenu = () => {
   const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");
@@ -28,12 +29,10 @@ export const ConfigMenu = () => {
           {textoCopiarURL}
         </button>
         <h3>QR Code</h3>
-        <img
-          src="https://raw.githubusercontent.com/lepixifpa/lepixifpa.github.io/main/qrcode.png"
-          alt="QR Code"
-          id="qr-code"
-          width="50%"
-        />
+
+        <div style={{aspectRatio: 1, width: "50%", borderRadius: 18, position: "relative", margin: "auto"}}>
+          <Image src={require("../assets/qrcode.png")} alt="" placeholder="blur" layout="fill" objectFit="cover"/>
+        </div>
         <br />
       </div>
     </div>

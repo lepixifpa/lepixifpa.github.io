@@ -2,8 +2,8 @@ import Image from "next/image";
 import styled from "styled-components";
 
 const ImageContainer = styled.div`
+  aspect-ratio: 1;
   width: 120px;
-  height: 120px;
   overflow: hidden;
   border-radius: 50%;
   border: 4px solid white;
@@ -19,7 +19,7 @@ export const Participante = ({
     <div>
       <a href={link}>
         <ImageContainer>
-          <Image src={foto} alt="" layout="fill" objectFit="cover" />
+          <Image src={foto} alt="" layout="fill" objectFit="cover" placeholder="blur"/>
         </ImageContainer>
         {nome}
         <br />

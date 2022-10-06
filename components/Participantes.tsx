@@ -1,12 +1,4 @@
 import { Participante } from "./Participante";
-import fotoVitor from "../assets/vitor.jpg"
-import fotoSabrina from "../assets/sabrina.jpg"
-import fotoJosue from "../assets/josue.jpg"
-import fotoKeilane from "../assets/keilane.jpg"
-import fotoGilberto from "../assets/gilberto.jpg"
-import fotoAilton from "../assets/ailton.jpeg"
-import fotoThiago from "../assets/thiago.jpg"
-import fotoJamily from "../assets/jamily-recortado.jpeg"
 
 export const Participantes = () => {
   return (
@@ -15,60 +7,60 @@ export const Participantes = () => {
       <Participante
         nome="Vitor"
         sobrenome="Koch"
-        foto={fotoVitor}
+        foto={require("../assets/vitor.jpg")}
         link="https://github.com/vitorkoch"
       />
       <Participante
         nome="Maria"
         sobrenome="Eduarda"
-        foto="https://avatars.githubusercontent.com/u/95509194?v=4"
+        foto={require("../assets/maria.jpeg")}
         link="https://github.com/Sukira-Mandela"
       />
       <Participante
         nome="Marcos"
         sobrenome="Henrique"
-        foto="https://avatars.githubusercontent.com/u/96156555?v=4"
+        foto={require("../assets/marcos.png")}
         link="https://github.com/MaamMark"
       />
       <Participante
         nome="Rebeca"
         sobrenome="Donato"
-        foto="https://avatars.githubusercontent.com/u/85712784?v=4"
+        foto={require("../assets/rebeca.jpeg")}
         link="https://github.com/RebecaRDonato"
       />
       <Participante
         nome="Michel"
         sobrenome="Arthur"
-        foto="https://avatars.githubusercontent.com/u/42917989?v=4"
+        foto={require("../assets/michel.jpeg")}
         link="https://github.com/Abytsu"
       />
       <Participante
         nome="Gustavo"
         sobrenome="Paulo"
-        foto="https://avatars.githubusercontent.com/u/82034427?v=4"
+        foto={require("../assets/gustavo.jpeg")}
         link="https://github.com/Satur696"
       />
       <Participante
         nome="Jamily"
         sobrenome="Trindade"
-        foto={fotoJamily}
+        foto={require("../assets/jamily-recortado.jpeg")}
       />
-      <Participante nome="Keilane" sobrenome="Alves" foto={fotoKeilane} />
+      <Participante nome="Keilane" sobrenome="Alves" foto={require("../assets/keilane.jpg")} />
       <Participante
         nome="Thiago"
         sobrenome="Soares"
-        foto={fotoThiago}
+        foto={require("../assets/thiago.jpg")}
       />
       <Participante
         nome="Sabrina"
         sobrenome="Silva"
-        foto={fotoSabrina}
+        foto={require("../assets/sabrina.jpg")}
       />
-      <Participante nome="Josué" sobrenome="Armando" foto={fotoJosue} />
+      <Participante nome="Josué" sobrenome="Armando" foto={require("../assets/josue.jpg")} />
 
       <h2>Coordenadores</h2>
-      <Participante nome="Gilberto" sobrenome="Melo" foto={fotoGilberto} />
-      <Participante nome="Ailton" sobrenome="Lopes" foto={fotoAilton} />
+      <Participante nome="Gilberto" sobrenome="Melo" foto={require("../assets/gilberto.jpg")} />
+      <Participante nome="Ailton" sobrenome="Lopes" foto={require("../assets/ailton.jpeg")} />
     </div>
   );
 };

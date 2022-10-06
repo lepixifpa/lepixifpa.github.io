@@ -1,13 +1,32 @@
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../assets/logo.png";
+import logoRound from "../assets/logo-round.png";
+
+const ImageContainer = styled.div`
+  display: flex;
+  aspect-ratio: 1;
+  width: 30%;
+  margin-left: -8px;
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid white;
+`;
+
 export const Descricao = () => {
   return (
     <div id="container-descricao">
-      <div id="logo">
-        <img
-          src="https://raw.githubusercontent.com/lepixifpa/lepixifpa/main/logo-round.png"
-          alt=""
-        />
-      </div>
-
+        <ImageContainer>
+          <Image
+            src={logo}
+            alt=""
+            placeholder="blur"
+            layout="fill"
+            objectFit="cover"
+            style={{borderRadius: "50%"}}
+            quality={100}
+          />
+        </ImageContainer>
       <div id="descricao">
         <h3>Quem somos?</h3>
         <p>

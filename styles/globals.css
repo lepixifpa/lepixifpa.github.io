@@ -1,13 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
-@font-face {
-  font-family: Cascadia-Code;
-  src: url("../public/CascadiaCode-Regular.otf") format("otf"),
-    url("../public/CascadiaCode.ttf") format("ttf"),
-    url("../public/CascadiaCode.woff2") format("woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 * {
-  font-family: Cascadia-Code, Raleway, sans-serif;
+  font-family: Josefin Sans, sans-serif;
+  font-weight: 500;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -72,26 +67,16 @@ button:hover {
   display: flex;
   margin: auto;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   flex-wrap: wrap;
   word-break: break-all;
 }
 
-#logo {
-  width: 30%;
-}
-
-#logo img {
-  width: 240px;
-  max-width: 50%;
-  border-radius: 50%;
-}
-
 #descricao {
   width: 70%;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 #descricao p {
@@ -162,12 +147,15 @@ button:hover {
 
 nav {
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 5px;
+  height: 64px;
   margin-bottom: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .9);
   text-align: center;
 }
 
@@ -182,19 +170,6 @@ nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-nav a img {
-  margin-right: 10px;
-}
-
-nav img {
-  border-radius: 50%;
-  border: none;
-}
-
-img {
-  border: 3px solid white;
 }
 
 #qr-code {
@@ -223,10 +198,7 @@ footer {
 nav,
 button,
 #participantes,
-#participantes img,
-#descricao p,
-#logo img,
-nav img {
+#descricao p {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
 }
 
