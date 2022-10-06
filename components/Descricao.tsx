@@ -9,7 +9,7 @@ const ImageContainer = styled.div`
   width: 30%;
   margin-left: -8px;
   position: relative;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 4px solid white;
 `;
 
@@ -23,7 +23,7 @@ export const Descricao = () => {
             placeholder="blur"
             layout="fill"
             objectFit="cover"
-            style={{borderRadius: "50%"}}
+            style={{borderRadius: "25%"}}
             quality={100}
           />
         </ImageContainer>

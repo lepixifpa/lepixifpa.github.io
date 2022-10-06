@@ -14,7 +14,7 @@ const ImageContainer = styled.div`
 export const NavBar = () => {
   return (
     <nav>
-      <a href="body">
+      <a href="#">
         <ImageContainer>
           <Image
             src={logoRound}
@@ -24,10 +24,10 @@ export const NavBar = () => {
             placeholder="blur"
           />
         </ImageContainer>
-        Home
+        HOME
       </a>
-      <a href="#participantes">Participantes</a>
-      <a href="#redes">Redes sociais</a>
+      <a href="#participantes">PARTICIPANTES</a>
+      <a href="#redes">REDES SOCIAIS</a>
     </nav>
   );
 };

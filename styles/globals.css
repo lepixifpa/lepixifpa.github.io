@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 * {
   font-family: Josefin Sans, sans-serif;
@@ -11,8 +11,11 @@
 }
 
 body {
-  background-color: #41be4a;
-  background-image: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
+  background: url(../assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
   height: 100%;
   width: 100%;
@@ -50,7 +53,7 @@ body {
 }
 
 button {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 4px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -80,14 +83,18 @@ button:hover {
 }
 
 #descricao p {
+  background-color: rgba(0, 0, 0, 0.8);
   border-top: 3px solid white;
   border-bottom: 3px solid white;
+  word-wrap: break-word;
+  word-break: break-all;
   padding: 8px;
   border-radius: 12px;
+  transition: all 250ms;
 }
 
 #participantes {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   padding: 12px;
   font-size: 20px;
@@ -128,12 +135,17 @@ button:hover {
 }
 
 #compartilhar-container {
-  background-color: #41be4a;
-  background-image: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
+  background: url(../assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 50%;
   border-radius: 20px;
   padding: 10px;
   position: absolute;
+  word-break: break-all;
+  word-wrap: break-word;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -155,8 +167,9 @@ nav {
   justify-content: space-around;
   height: 64px;
   margin-bottom: 8px;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
   text-align: center;
+  border-bottom: 4px solid white;
 }
 
 nav,
@@ -186,13 +199,6 @@ nav a:hover {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   fill: transparent;
-}
-
-footer {
-  color: white;
-  margin: 8px;
-  font-size: 18px;
-  font-style: italic;
 }
 
 nav,
