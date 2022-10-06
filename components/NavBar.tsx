@@ -1,6 +1,7 @@
-import Image from "next/image"
-import styled from "styled-components"
-import logoRound from "../assets/logo-round.png"
+import Image from "next/image";
+import Link from "next/link";
+import styled from "styled-components";
+import logoRound from "../assets/logo-round.png";
 
 const ImageContainer = styled.div`
   width: 58px;
@@ -14,18 +15,20 @@ const ImageContainer = styled.div`
 export const NavBar = () => {
   return (
     <nav>
-      <a href="#">
-        <ImageContainer>
-          <Image
-            src={logoRound}
-            alt=""
-            width={64}
-            height={64}
-            placeholder="blur"
-          />
-        </ImageContainer>
-        HOME
-      </a>
+      <Link href="/">
+        <a href="#">
+          <ImageContainer>
+            <Image
+              src={logoRound}
+              alt=""
+              width={64}
+              height={64}
+              placeholder="blur"
+            />
+          </ImageContainer>
+          HOME
+        </a>
+      </Link>
       <a href="#participantes">PARTICIPANTES</a>
       <a href="#redes">REDES SOCIAIS</a>
     </nav>
