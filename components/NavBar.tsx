@@ -26,11 +26,11 @@ export const NavBar = () => {
               placeholder="blur"
             />
           </ImageContainer>
-          HOME
+          Home
         </a>
       </Link>
-      <a href="#participantes">PARTICIPANTES</a>
-      <a href="#redes">REDES SOCIAIS</a>
+      <a href="#participantes">Participantes</a>
+      <a href="#redes">Redes Sociais</a>
     </nav>
   );
 };
