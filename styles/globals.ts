@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
 * {
   font-family: Poppins, sans-serif;
+  font-weight: 500;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
