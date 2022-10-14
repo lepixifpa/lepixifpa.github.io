@@ -1,13 +1,22 @@
 import { useState } from "react";
 import Image from "next/image";
-import { LinkContainer } from "./styles";
+import {
+  WhatsappShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  EmailShareButton,
+  TelegramShareButton,
+} from "react-share";
 
+import { LinkContainer, RedesSociaisContainer } from "./styles";
 
 const Compartilhar = () => {
   const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");
+  const webLink = "https://lepix.vercel.app"
+  const compartilharMsg = "Conheça o LEPIX!";
 
   const copiarURL = () => {
-    navigator.clipboard.writeText(window?.location.href);
+    navigator.clipboard.writeText(webLink);
     setTextoCopiarURL("Copiado!");
     setTimeout(() => {
       setTextoCopiarURL("Copiar");
@@ -16,12 +25,32 @@ const Compartilhar = () => {
   return (
     <>
       <h3>Link</h3>
-      <LinkContainer>{window?.location.href}</LinkContainer>
+      <LinkContainer>{webLink}</LinkContainer>
       <button type="button" id="copiar-url" onClick={copiarURL}>
         {textoCopiarURL}
       </button>
-      <h3>QR Code</h3>
+      <RedesSociaisContainer>
+        <WhatsappShareButton url={webLink} title={compartilharMsg}>
+          WhatsApp
+        </WhatsappShareButton>
 
+        <FacebookShareButton url={webLink} title={compartilharMsg}>
+          Facebook
+        </FacebookShareButton>
+
+        <TwitterShareButton url={webLink} title={compartilharMsg}>
+          Twitter
+        </TwitterShareButton>
+
+        <EmailShareButton url={webLink} title={compartilharMsg}>
+          Email
+        </EmailShareButton>
+
+        <TelegramShareButton url={webLink} title={compartilharMsg}>
+          Telegram
+        </TelegramShareButton>
+      </RedesSociaisContainer>
+      <h3>QR Code</h3>
       <div
         style={{
           aspectRatio: 1,

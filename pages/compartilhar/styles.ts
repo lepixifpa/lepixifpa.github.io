@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const LinkContainer = styled.span`
   font-size: 16px;
@@ -11,4 +11,13 @@ export const LinkContainer = styled.span`
   margin: 8px;
 `;
 
-export const CopiarBtn = styled.button``
+export const RedesSociaisContainer = styled.div`
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+`;
+
+export const CopiarBtn = styled.button``;
