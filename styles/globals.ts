@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
@@ -158,49 +161,19 @@ button:hover {
   font-size: 18px;
 }
 
-nav {
-  display: flex;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 64px;
-  margin-bottom: 8px;
-  background-color: rgba(0, 0, 0, 0.9);
-  text-align: center;
-  border-bottom: 4px solid white;
-}
-
 nav,
 nav a {
-  color: white;
-  font-size: 18px;
-  transition: 250ms;
+
 }
 
 nav a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+
 }
 
 #qr-code {
   border: none;
 }
 
-nav a:hover {
-  color: #41be4a;
-  background: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  fill: transparent;
-}
 
 nav,
 button,
@@ -212,3 +185,5 @@ button,
 .hide {
   display: none;
 }
+`;
+export default GlobalStyle;

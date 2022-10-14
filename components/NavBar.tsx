@@ -12,9 +12,53 @@ const ImageContainer = styled.div`
   border-radius: 50%;
 `;
 
+const StyledNav = styled.nav`
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+  margin-bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  border-bottom: 4px solid white;
+  color: white;
+  font-size: 18px;
+  transition: 250ms;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  word-break: break-all;
+  gap: 12px;
+
+  a {
+    color: white;
+    font-size: 18px;
+    transition: 250ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  a:hover {
+  color: #41be4a;
+  background: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  fill: transparent;
+}
+`;
+
 export const NavBar = () => {
   return (
-    <nav>
+    <StyledNav>
       <Link href="/">
         <a href="#">
           <ImageContainer>
@@ -31,6 +75,6 @@ export const NavBar = () => {
       </Link>
       <a href="#participantes">Participantes</a>
       <a href="#redes">Redes Sociais</a>
-    </nav>
+    </StyledNav>
   );
 };

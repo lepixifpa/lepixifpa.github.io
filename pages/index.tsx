@@ -1,12 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import { Descricao } from '../components/Descricao'
 import { Redes } from '../components/Redes'
 import { Participantes } from '../components/Participantes'
 import { ConfigMenu } from '../components/ConfigMenu'
-import { NavBar } from '../components/NavBar'
+
 
 const Home: NextPage = () => {
   return (
