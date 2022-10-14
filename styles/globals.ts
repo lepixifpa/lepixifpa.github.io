@@ -1,12 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
 * {
-  font-family: Poppins, Josefin Sans, sans-serif;
-  font-weight: 500;
+  font-family: Poppins, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,14 +33,8 @@ body {
   width: 90%;
 }
 
-@media screen and (max-width: 650px) {
-  #redes {
-    flex-direction: column !important;
-  }
-}
-
 #redes div {
-  width: 280px;
+  width: 30%;
   align-self: center;
   margin-left: 8px;
   margin-top: 8px;
@@ -56,11 +48,23 @@ body {
   font-size: 24px;
 }
 
+@media screen and (max-width: 650px) {
+  #redes {
+    flex-direction: column !important;
+  }
+  #redes div {
+    width: 100%;
+  }
+  #navbarLogo {
+    display: none;
+  }
+}
 button {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 4px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
+  font-size: 16px;
   transition: 250ms;
   cursor: pointer;
 }
@@ -127,53 +131,6 @@ button:hover {
   color: black;
   text-decoration: none;
 }
-
-#compartilhar-bg {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-#compartilhar-container {
-  background: url(/background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 50%;
-  border-radius: 20px;
-  padding: 10px;
-  position: absolute;
-  word-break: break-all;
-  word-wrap: break-word;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 12px;
-  font-size: 18px;
-}
-
-#compartilhar-container button {
-  font-size: 18px;
-}
-
-nav,
-nav a {
-
-}
-
-nav a {
-
-}
-
-#qr-code {
-  border: none;
-}
-
 
 nav,
 button,

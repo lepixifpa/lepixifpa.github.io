@@ -1,4 +1,3 @@
-import { alternarVisibilidadeCompartilhar } from "../pages/index";
 import { Rede } from "./Rede";
 
 export const Redes = () => {
@@ -19,11 +18,6 @@ export const Redes = () => {
         icon="fa-solid fa-envelope"
         link="mailto: ifpalepix@gmail.com"
       />
-        <Rede
-          texto="Compartilhar"
-          icon="fa-solid fa-share"
-          click={alternarVisibilidadeCompartilhar}
-        />
     </div>
   );
 };

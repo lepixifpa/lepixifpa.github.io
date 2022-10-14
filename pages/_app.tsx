@@ -1,19 +1,18 @@
-//import '../styles/globals.css'
-import GlobalStyle from "../styles/globals"
-import styled from 'styled-components';
-import type { AppProps } from 'next/app'
-import { NavBar } from '../components/NavBar';
+import GlobalStyle from "../styles/globals";
+import styled from "styled-components";
+import type { AppProps } from "next/app";
+import { NavBar } from "../components/NavBar";
 
 const StyledFooter = styled.footer`
   color: white;
   font-style: italic;
   margin-top: 4px;
-`
+`;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <GlobalStyle/>
+      <GlobalStyle />
       <NavBar />
       <Component {...pageProps} />
       <StyledFooter>&copy; Vitor Koch 2022</StyledFooter>
@@ -21,4 +20,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp
+export default MyApp;

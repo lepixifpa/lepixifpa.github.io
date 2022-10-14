@@ -33,6 +33,7 @@ const StyledNav = styled.nav`
   align-items: center;
   word-break: break-all;
   gap: 12px;
+  font-weight: 500;
 
   a {
     color: white;
@@ -44,24 +45,24 @@ const StyledNav = styled.nav`
   }
 
   a:hover {
-  color: #41be4a;
-  background: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  fill: transparent;
-}
+    color: #41be4a;
+    background: linear-gradient(135deg, #41be4a 0%, #53c89d 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    fill: transparent;
+  }
 `;
 
 export const NavBar = () => {
   return (
     <StyledNav>
       <Link href="/">
-        <a href="#">
-          <ImageContainer>
+        <a>
+          <ImageContainer id="navbarLogo">
             <Image
               src={logoRound}
               alt=""
@@ -73,8 +74,13 @@ export const NavBar = () => {
           Home
         </a>
       </Link>
-      <a href="#participantes">Participantes</a>
-      <a href="#redes">Redes Sociais</a>
+      <Link href="/#participantes">
+        <a>Participantes</a>
+      </Link>
+      <Link href="/#redes">
+        <a>Redes Sociais</a>
+      </Link>
+      <Link href="/compartilhar">Compartilhar</Link>
     </StyledNav>
   );
 };
