@@ -3,7 +3,7 @@ export const Rede = ({link, texto, icon, click}: any) => {
     <div>
       <a href={link}>
         <button type="button" onClick={click}>
-          <i className={icon}></i>
+          {icon}
           <br />
           {texto}
         </button>

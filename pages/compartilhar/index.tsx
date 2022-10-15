@@ -7,12 +7,20 @@ import {
   EmailShareButton,
   TelegramShareButton,
 } from "react-share";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWhatsapp,
+  faFacebook,
+  faTwitter,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 import { LinkContainer, RedesSociaisContainer } from "./styles";
 
 const Compartilhar = () => {
   const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");
-  const webLink = "https://lepix.vercel.app"
+  const webLink = "https://lepix.vercel.app";
   const compartilharMsg = "Conheça o LEPIX!";
 
   const copiarURL = () => {
@@ -22,6 +30,10 @@ const Compartilhar = () => {
       setTextoCopiarURL("Copiar");
     }, 2000);
   };
+
+  const SocialIcon = ({ icon }: any) => {
+    return <FontAwesomeIcon icon={icon} style={{ fontSize: "64px", boxShadow: "none", width: 64, height: 64}} />;
+  };
   return (
     <>
       <h3>Link</h3>
@@ -29,27 +41,29 @@ const Compartilhar = () => {
       <button type="button" id="copiar-url" onClick={copiarURL}>
         {textoCopiarURL}
       </button>
+
       <RedesSociaisContainer>
         <WhatsappShareButton url={webLink} title={compartilharMsg}>
-          WhatsApp
+          <SocialIcon icon={faWhatsapp}/>
         </WhatsappShareButton>
 
         <FacebookShareButton url={webLink} title={compartilharMsg}>
-          Facebook
+          <SocialIcon icon={faFacebook}/>
         </FacebookShareButton>
 
         <TwitterShareButton url={webLink} title={compartilharMsg}>
-          Twitter
+          <SocialIcon icon={faTwitter}/>
         </TwitterShareButton>
 
         <EmailShareButton url={webLink} title={compartilharMsg}>
-          Email
+          <SocialIcon icon={faEnvelope} />
         </EmailShareButton>
 
         <TelegramShareButton url={webLink} title={compartilharMsg}>
-          Telegram
+          <SocialIcon icon={faTelegram}/>
         </TelegramShareButton>
       </RedesSociaisContainer>
+
       <h3>QR Code</h3>
       <div
         style={{
