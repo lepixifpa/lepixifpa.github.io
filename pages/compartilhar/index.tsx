@@ -16,7 +16,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import { LinkContainer, RedesSociaisContainer } from "./styles";
+import { LinkContainer, RedesSociaisContainer } from "./_styles";
 
 const Compartilhar = () => {
   const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");
@@ -32,7 +32,12 @@ const Compartilhar = () => {
   };
 
   const SocialIcon = ({ icon }: any) => {
-    return <FontAwesomeIcon icon={icon} style={{ fontSize: "64px", boxShadow: "none", width: 64, height: 64}} />;
+    return (
+      <FontAwesomeIcon
+        icon={icon}
+        style={{ fontSize: "64px", boxShadow: "none", width: 64, height: 64 }}
+      />
+    );
   };
   return (
     <>
@@ -44,15 +49,15 @@ const Compartilhar = () => {
 
       <RedesSociaisContainer>
         <WhatsappShareButton url={webLink} title={compartilharMsg}>
-          <SocialIcon icon={faWhatsapp}/>
+          <SocialIcon icon={faWhatsapp} />
         </WhatsappShareButton>
 
         <FacebookShareButton url={webLink} title={compartilharMsg}>
-          <SocialIcon icon={faFacebook}/>
+          <SocialIcon icon={faFacebook} />
         </FacebookShareButton>
 
         <TwitterShareButton url={webLink} title={compartilharMsg}>
-          <SocialIcon icon={faTwitter}/>
+          <SocialIcon icon={faTwitter} />
         </TwitterShareButton>
 
         <EmailShareButton url={webLink} title={compartilharMsg}>
@@ -60,7 +65,7 @@ const Compartilhar = () => {
         </EmailShareButton>
 
         <TelegramShareButton url={webLink} title={compartilharMsg}>
-          <SocialIcon icon={faTelegram}/>
+          <SocialIcon icon={faTelegram} />
         </TelegramShareButton>
       </RedesSociaisContainer>
 
