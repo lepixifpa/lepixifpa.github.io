@@ -31,12 +31,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   width: 90%;
 }
 
 #redes div {
-
+  width: 30%;
   align-self: center;
   margin-left: 8px;
   margin-top: 8px;
