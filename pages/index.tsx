@@ -14,8 +14,8 @@ const Home: NextPage = () => {
           content="Nós somos o LEPIX (Laboratório Experimental de Pesquisa em Informática do Xingu), um grupo de estudantes do IFPA Campus Altamira estudando Arduino, Machine Learning e Data Mining"
         />
         <link
-          rel="icon"
-          href={require("../assets/logo-round.png")}
+          rel="short icon"
+          href="/logo-round.png"
         />
       </Head>
 
