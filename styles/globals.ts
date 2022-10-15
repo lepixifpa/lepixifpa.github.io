@@ -2,9 +2,10 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 * {
-  font-family: Poppins, sans-serif;
+  font-family: JetBrains Mono, Poppins, sans-serif;
   font-weight: 500;
   box-sizing: border-box;
   margin: 0;
@@ -30,12 +31,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   width: 90%;
 }
 
 #redes div {
-  width: 30%;
+
   align-self: center;
   margin-left: 8px;
   margin-top: 8px;
