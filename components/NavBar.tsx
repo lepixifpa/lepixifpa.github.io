@@ -28,12 +28,8 @@ const StyledNav = styled.nav`
   color: white;
   font-size: 18px;
   transition: 250ms;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  word-break: break-all;
+  flex-wrap: wrap;
   gap: 12px;
-  font-weight: 500;
 
   a {
     color: white;
