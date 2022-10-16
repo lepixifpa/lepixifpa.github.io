@@ -2,6 +2,7 @@ import GlobalStyle from "../styles/globals";
 import styled from "styled-components";
 import type { AppProps } from "next/app";
 import { NavBar } from "../components/NavBar";
+import NextNProgress from "nextjs-progressbar"
 
 const StyledFooter = styled.footer`
   color: white;
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <GlobalStyle />
       <NavBar />
+      <NextNProgress />
       <Component {...pageProps} />
       <StyledFooter>&copy; Vitor Koch 2022</StyledFooter>
     </>
