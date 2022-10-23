@@ -3,6 +3,7 @@ import styled from "styled-components";
 import type { AppProps } from "next/app";
 import { NavBar } from "../components/NavBar";
 import NextNProgress from "nextjs-progressbar"
+import "../styles/fonts.css"
 
 const StyledFooter = styled.footer`
   color: white;
