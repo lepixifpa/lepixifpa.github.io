@@ -29,7 +29,7 @@ export const Descricao = () => {
         </ImageContainer>
       <div id="descricao">
         <h3>Quem somos?</h3>
-        <p>
+        <p style={{fontFamily:"JetBrains Mono"}}>
           Nós somos o LEPIX (Laboratório Experimental de Pesquisa em Informática
           do Xingu), um grupo de estudantes do IFPA Campus Altamira estudando
           Arduino, Machine Learning e Data Mining
