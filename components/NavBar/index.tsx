@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
-import logoRound from "../assets/logo-round.png";
+import logoRound from "../../assets/logo-round.png";
 
 const ImageContainer = styled.div`
   width: 58px;
@@ -38,6 +38,7 @@ const StyledNav = styled.nav`
     display: flex;
     flex-direction: row;
     align-items: center;
+    text-transform: uppercase;
   }
 
   a:hover {
