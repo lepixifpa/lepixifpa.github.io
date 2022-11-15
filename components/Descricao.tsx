@@ -16,20 +16,20 @@ const ImageContainer = styled.div`
 export const Descricao = () => {
   return (
     <div id="container-descricao">
-        <ImageContainer>
-          <Image
-            src={logo}
-            alt=""
-            placeholder="blur"
-            layout="fill"
-            objectFit="cover"
-            style={{borderRadius: "50%"}}
-            quality={100}
-          />
-        </ImageContainer>
+      <ImageContainer>
+        <Image
+          src={logo}
+          alt=""
+          placeholder="blur"
+          layout="fill"
+          objectFit="cover"
+          style={{ borderRadius: "50%" }}
+          quality={100}
+        />
+      </ImageContainer>
       <div id="descricao">
-        <h3 style={{fontFamily:"JetBrains Mono"}}>Quem somos?</h3>
-        <p style={{fontFamily:"JetBrains Mono"}}>
+        <h3 style={{ fontFamily: "JetBrains Mono" }}>Quem somos?</h3>
+        <p style={{ fontFamily: "JetBrains Mono" }}>
           Nós somos o LEPIX (Laboratório Experimental de Pesquisa em Informática
           do Xingu), um grupo de estudantes do IFPA Campus Altamira estudando
           Arduino, Machine Learning e Data Mining

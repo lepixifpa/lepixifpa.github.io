@@ -1,4 +1,4 @@
-export const Rede = ({link, texto, icon, click}: any) => {
+export const Rede = ({ link, texto, icon, click }: any) => {
   return (
     <div>
       <a href={link}>
@@ -9,5 +9,5 @@ export const Rede = ({link, texto, icon, click}: any) => {
         </button>
       </a>
     </div>
-  )
-}
+  );
+};

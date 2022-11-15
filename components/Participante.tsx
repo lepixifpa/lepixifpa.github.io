@@ -19,7 +19,13 @@ export const Participante = ({
     <div>
       <a href={link}>
         <ImageContainer>
-          <Image src={foto} alt="" layout="fill" objectFit="cover" placeholder="blur"/>
+          <Image
+            src={foto}
+            alt=""
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+          />
         </ImageContainer>
         {nome}
         <br />

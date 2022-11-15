@@ -23,7 +23,7 @@ export const RedesSociaisContainer = styled.div`
   gap: 8px;
   align-items: center;
   flex-direction: row;
-  flex-wrap : wrap;
+  flex-wrap: wrap;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15);
 
   svg {

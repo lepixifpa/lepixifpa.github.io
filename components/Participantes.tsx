@@ -45,7 +45,11 @@ export const Participantes = () => {
         sobrenome="Trindade"
         foto={require("../assets/jamily-recortado.jpeg")}
       />
-      <Participante nome="Keilane" sobrenome="Alves" foto={require("../assets/keilane.jpg")} />
+      <Participante
+        nome="Keilane"
+        sobrenome="Alves"
+        foto={require("../assets/keilane.jpg")}
+      />
       <Participante
         nome="Thiago"
         sobrenome="Soares"
@@ -56,11 +60,23 @@ export const Participantes = () => {
         sobrenome="Silva"
         foto={require("../assets/sabrina.jpg")}
       />
-      <Participante nome="Josué" sobrenome="Armando" foto={require("../assets/josue.jpg")} />
+      <Participante
+        nome="Josué"
+        sobrenome="Armando"
+        foto={require("../assets/josue.jpg")}
+      />
 
       <h2>Coordenadores</h2>
-      <Participante nome="Gilberto" sobrenome="Melo" foto={require("../assets/gilberto.jpg")} />
-      <Participante nome="Ailton" sobrenome="Lopes" foto={require("../assets/ailton.jpeg")} />
+      <Participante
+        nome="Gilberto"
+        sobrenome="Melo"
+        foto={require("../assets/gilberto.jpg")}
+      />
+      <Participante
+        nome="Ailton"
+        sobrenome="Lopes"
+        foto={require("../assets/ailton.jpeg")}
+      />
     </div>
   );
 };
