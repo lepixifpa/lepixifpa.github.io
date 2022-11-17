@@ -65,6 +65,16 @@ export const Participantes = () => {
         sobrenome="Armando"
         foto={require("../assets/josue.jpg")}
       />
+      <Participante
+        nome="Rian"
+        sobrenome="Charllys"
+        foto={require("../assets/rian.jpeg")}
+      />
+      <Participante
+        nome="João"
+        sobrenome="Vinícius"
+        foto={require("../assets/joao.jpeg")}
+      />
 
       <h2>Coordenadores</h2>
       <Participante
