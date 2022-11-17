@@ -32,6 +32,7 @@ const StyledNav = styled.nav`
   gap: 12px;
 
   a {
+    font-weight: bold;
     color: white;
     font-size: 18px;
     transition: 250ms;
