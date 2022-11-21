@@ -32,7 +32,6 @@ const StyledNav = styled.nav`
   gap: 12px;
 
   a {
-    font-weight: bold;
     color: white;
     font-size: 18px;
     transition: 250ms;
@@ -72,12 +71,10 @@ export const NavBar = () => {
           Home
         </a>
       </Link>
-      <Link href="/#participantes">
-        <a>Participantes</a>
+      <Link href="/blog">
+        <a>Blog</a>
       </Link>
-      <Link href="/#redes">
-        <a>Redes Sociais</a>
-      </Link>
+
       <Link href="/compartilhar">Compartilhar</Link>
     </StyledNav>
   );
