@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import styled from "styled-components";
-import logoRound from "../../assets/logo-round.png";
+import Image from 'next/image';
+import Link from 'next/link';
+import styled from 'styled-components';
+import logoRound from '../../assets/logo-round.png';
 
 const ImageContainer = styled.div`
   width: 58px;
@@ -71,9 +71,9 @@ export const NavBar = () => {
           Home
         </a>
       </Link>
-      <Link href="/blog">
+      {/*       <Link href="/blog">
         <a>Blog</a>
-      </Link>
+      </Link> */}
 
       <Link href="/compartilhar">Compartilhar</Link>
     </StyledNav>

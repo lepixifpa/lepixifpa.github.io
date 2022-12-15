@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styled from "styled-components";
+import Image from 'next/image';
+import styled from 'styled-components';
 
 const ImageContainer = styled.div`
   aspect-ratio: 1;
@@ -12,8 +12,8 @@ const ImageContainer = styled.div`
 export const Participante = ({
   nome,
   sobrenome,
-  foto = "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-  link = "https://lepixifpa.github.io/",
+  foto = 'https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+  link = 'https://lepixifpa.github.io/',
 }: any) => {
   return (
     <div>

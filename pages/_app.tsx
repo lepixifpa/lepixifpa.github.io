@@ -1,10 +1,10 @@
-import GlobalStyle from "../styles/globals";
-import styled from "styled-components";
-import type { AppProps } from "next/app";
-import { NavBar } from "../components/NavBar";
-import NextNProgress from "nextjs-progressbar";
-import "../styles/fonts.css";
-import Head from "next/head";
+import GlobalStyle from '../styles/globals';
+import styled from 'styled-components';
+import type { AppProps } from 'next/app';
+import { NavBar } from '../components/NavBar';
+import NextNProgress from 'nextjs-progressbar';
+import '../styles/fonts.css';
+import Head from 'next/head';
 
 const StyledFooter = styled.footer`
   color: white;

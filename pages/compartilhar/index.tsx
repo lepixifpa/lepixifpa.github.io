@@ -1,36 +1,36 @@
-import { useState } from "react";
-import Image from "next/image";
+import { useState } from 'react';
+import Image from 'next/image';
 import {
   WhatsappShareButton,
   FacebookShareButton,
   TwitterShareButton,
   EmailShareButton,
   TelegramShareButton,
-} from "react-share";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from 'react-share';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faWhatsapp,
   faFacebook,
   faTwitter,
   faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 import {
   LinkContainer,
   RedesSociaisContainer,
-} from "../../styles/compartilhar";
+} from '../../styles/compartilhar';
 
 const Compartilhar = () => {
-  const [textoCopiarURL, setTextoCopiarURL] = useState("Copiar");
-  const webLink = "https://lepix.vercel.app";
-  const compartilharMsg = "Conheça o LEPIX!";
+  const [textoCopiarURL, setTextoCopiarURL] = useState('Copiar');
+  const webLink = 'https://lepix.vercel.app';
+  const compartilharMsg = 'Conheça o LEPIX!';
 
   const copiarURL = () => {
     navigator.clipboard.writeText(webLink);
-    setTextoCopiarURL("Copiado!");
+    setTextoCopiarURL('Copiado!');
     setTimeout(() => {
-      setTextoCopiarURL("Copiar");
+      setTextoCopiarURL('Copiar');
     }, 2000);
   };
 
@@ -38,7 +38,7 @@ const Compartilhar = () => {
     return (
       <FontAwesomeIcon
         icon={icon}
-        style={{ fontSize: "64px", boxShadow: "none", width: 64, height: 64 }}
+        style={{ fontSize: '64px', boxShadow: 'none', width: 64, height: 64 }}
       />
     );
   };
@@ -76,15 +76,15 @@ const Compartilhar = () => {
       <div
         style={{
           aspectRatio: 1,
-          width: "480px",
-          maxWidth: "90%",
+          width: '480px',
+          maxWidth: '90%',
           borderRadius: 18,
-          position: "relative",
-          margin: "auto",
+          position: 'relative',
+          margin: 'auto',
         }}
       >
         <Image
-          src={require("../../assets/qrcode.png")}
+          src={require('../../assets/qrcode.png')}
           alt=""
           placeholder="blur"
           layout="fill"

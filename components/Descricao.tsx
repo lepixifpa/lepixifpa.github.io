@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Image from "next/image";
-import logo from "../assets/logo.png";
-import logoRound from "../assets/logo-round.png";
+import styled from 'styled-components';
+import Image from 'next/image';
+import logo from '../assets/logo.png';
+import logoRound from '../assets/logo-round.png';
 
 const ImageContainer = styled.div`
   display: flex;
@@ -23,13 +23,13 @@ export const Descricao = () => {
           placeholder="blur"
           layout="fill"
           objectFit="cover"
-          style={{ borderRadius: "50%" }}
+          style={{ borderRadius: '50%' }}
           quality={100}
         />
       </ImageContainer>
       <div id="descricao">
-        <h3 style={{ fontFamily: "IBM Plex Mono" }}>Quem somos?</h3>
-        <p style={{ fontFamily: "IBM Plex Mono" }}>
+        <h3 style={{ fontFamily: 'Fira Code' }}>Quem somos?</h3>
+        <p style={{ fontFamily: 'Fira Code' }}>
           Nós somos o LEPIX (Laboratório Experimental de Pesquisa em Informática
           do Xingu), um grupo de estudantes do IFPA Campus Altamira estudando
           Arduino, Machine Learning e Data Mining

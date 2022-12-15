@@ -1,7 +1,7 @@
-import { Rede } from "./Rede";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { Rede } from './Rede';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export const Redes = () => {
   return (

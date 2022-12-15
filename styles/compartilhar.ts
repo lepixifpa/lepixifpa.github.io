@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const LinkContainer = styled.span`
   font-size: 16px;
