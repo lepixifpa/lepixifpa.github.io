@@ -39,6 +39,7 @@ const StyledNav = styled.nav`
     flex-direction: row;
     align-items: center;
     text-transform: uppercase;
+    font-weight: bold;
   }
 
   a:hover {
