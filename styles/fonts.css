@@ -1,11 +1,8 @@
-/*Raleway*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 /*Fira Code*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap');
+/*Comfortaa*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
 * {
-  -webkit-font-feature-settings: 'lnum';
-  -moz-font-feature-settings: 'lnum';
-  font-feature-settings: 'lnum';
-  font-family: Raleway, sans-serif;
-  font-weight: 500;
+  font-family: Comfortaa, sans-serif;
 }
